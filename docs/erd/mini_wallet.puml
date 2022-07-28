@@ -1,0 +1,45 @@
+@startuml
+
+hide circle
+skinparam linetype ortho
+skinparam shadowing True
+skinparam class {
+    FontColor black
+    BackgroundColor LightYellow
+    BorderColor DarkRed
+    BorderThickness 2
+}
+left to right direction
+
+
+entity wallet {
+    **id: varchar <<PK>>**
+    --
+    **owner_id: varchar**
+    **status: varchar**
+    **enabled_at: timestamp**
+    --
+    **created_at: timestamp**
+    **created_by: varchar**
+    updated_at: timestamp
+    updated_by: varchar
+}
+
+entity transaction {
+    **id: varchar <<PK>>**
+    --
+    **wallet_id: varchar <<FK__wallet__id>**
+    **type: varchar**
+    **status: varchar**
+    **amount: numeric**
+    **reference_id: varchar**
+    --
+    **created_at: timestamp**
+    **created_by: varchar**
+    updated_at: timestamp
+    updated_by: varchar
+}
+
+wallet ||..o{ transaction
+
+@enduml

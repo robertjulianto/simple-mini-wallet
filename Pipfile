@@ -1,0 +1,26 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+Flask = "~=2.1.1"
+SQLAlchemy = "~=1.4.32"
+psycopg2-binary = "~=2.9.3"
+marshmallow = "~=3.15.0"
+injector = "~=0.19.0"
+simplejson = "~=3.17.6"
+flask-apispec = "==0.11.0"
+markupsafe = "~=2.0.1"
+types-simplejson = "~=3.17.5"
+pyjwt = "~=2.4.0"
+
+[dev-packages]
+pytest = "*"
+pytest-bdd = "*"
+freezegun = "*"
+types-freezegun = "*"
+mypy = "*"
+
+[requires]
+python_version = "3.8"
