@@ -107,7 +107,7 @@ This project is using classical approach. We are using:
 
 Execute the step below to run our classical test:
 
-1. Create database `balance_unittest` and schema `balance` on your local postgres container.
+1. Create database `mini_wallet_unittest` and schema `mini_wallet` on your local postgres container.
 
 2. Go to your project directory and run migration.
 ```bash
